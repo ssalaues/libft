@@ -25,7 +25,7 @@ char			**ft_strsplit(const char *s, char c)
 		return (NULL);
 	while (nb--)
 	{
-		while (*s == c && *s != '\0')
+		while (*s == c && *s)
 			s++;
 		str[i] = ft_strsub((const char *)s, 0, ft_wlen(s, c));
 		if (str[i] == NULL)
