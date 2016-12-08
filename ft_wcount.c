@@ -12,7 +12,21 @@
 
 #include "libft.h"
 
-int	ft_wcount(char *s, char c)
+int ft_wcount(const char *s, char c)
 {
-
+    int ct;
+    
+    ct = 0;
+    while (*s)
+    {
+        while (*s == c)
+            s++;
+        if (*s != c && *s)
+        {
+            ct++;
+            while (*s != c && *s)
+                s++;
+        }
+    }
+    return (ct);
 }
