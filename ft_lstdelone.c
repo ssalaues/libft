@@ -1,37 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr.c                                        :+:      :+:    :+:   */
+/*   ft_lstdelone.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ssalaues <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/11/30 14:31:51 by ssalaues          #+#    #+#             */
-/*   Updated: 2016/12/11 21:44:35 by ssalaues         ###   ########.fr       */
+/*   Created: 2016/12/09 19:17:48 by ssalaues          #+#    #+#             */
+/*   Updated: 2016/12/09 20:01:51 by ssalaues         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putnbr(int n)
+void	ft_lstdelone(t_list **alst, void (*del)(void *, size_t))
 {
-	char	*min;
-	long	nb;
-
-	nb = n;
-	min = "-2147483648";
-	if (nb == -2147483648)
-		while (*min)
-			write(1, min++, 1);
-	if (nb < 0 && nb != -2147483648)
-	{
-		nb = -nb;
-		write(1, "-", 1);
-	}
-	if (nb > 9 && nb != -2147483648)
-	{
-		ft_putnbr(nb / 10);
-		ft_putnbr(nb % 10);
-	}
-	else if (nb != -2147483648)
-		ft_putchar(nb + '0');
+	del((*alst)->content, (*alst)->content_size);
+	free(*alst);
+	*alst = NULL;
 }

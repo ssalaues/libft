@@ -6,7 +6,7 @@
 /*   By: ssalaues <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/30 15:42:18 by ssalaues          #+#    #+#             */
-/*   Updated: 2016/11/30 15:43:16 by ssalaues         ###   ########.fr       */
+/*   Updated: 2016/12/09 16:11:32 by ssalaues         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 void	ft_putendl(char const *s)
 {
+	if (!s)
+		return ;
 	while (*s)
 		write(1, s++, 1);
 	write(1, "\n", 1);

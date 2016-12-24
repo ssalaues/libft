@@ -1,37 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr.c                                        :+:      :+:    :+:   */
+/*   ft_lstdel.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ssalaues <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/11/30 14:31:51 by ssalaues          #+#    #+#             */
-/*   Updated: 2016/12/11 21:44:35 by ssalaues         ###   ########.fr       */
+/*   Created: 2016/12/09 19:42:32 by ssalaues          #+#    #+#             */
+/*   Updated: 2016/12/09 20:19:11 by ssalaues         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putnbr(int n)
+void	ft_lstdel(t_list **alst, void (*del)(void *, size_t))
 {
-	char	*min;
-	long	nb;
+	t_list	*next;
 
-	nb = n;
-	min = "-2147483648";
-	if (nb == -2147483648)
-		while (*min)
-			write(1, min++, 1);
-	if (nb < 0 && nb != -2147483648)
+	while (*alst != NULL)
 	{
-		nb = -nb;
-		write(1, "-", 1);
+		next = (*alst)->next;
+		ft_lstdelone(alst, del);
+		*alst = next;
 	}
-	if (nb > 9 && nb != -2147483648)
-	{
-		ft_putnbr(nb / 10);
-		ft_putnbr(nb % 10);
-	}
-	else if (nb != -2147483648)
-		ft_putchar(nb + '0');
+	*alst = NULL;
 }

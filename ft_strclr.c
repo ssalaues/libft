@@ -6,7 +6,7 @@
 /*   By: ssalaues <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/03 12:46:21 by ssalaues          #+#    #+#             */
-/*   Updated: 2016/12/03 12:48:19 by ssalaues         ###   ########.fr       */
+/*   Updated: 2016/12/19 17:05:35 by ssalaues         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,8 @@
 
 void	ft_strclr(char *s)
 {
-	s = ft_memset(s, '\0', ft_strlen(s));
+	if (!s)
+		return ;
+	if (*s)
+		ft_bzero(s, ft_strlen(s));
 }

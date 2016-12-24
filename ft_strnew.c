@@ -6,7 +6,7 @@
 /*   By: ssalaues <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/03 12:11:05 by ssalaues          #+#    #+#             */
-/*   Updated: 2016/12/05 13:28:13 by ssalaues         ###   ########.fr       */
+/*   Updated: 2016/12/19 17:04:34 by ssalaues         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_strnew(size_t size)
 		return (NULL);
 	else
 	{
-		str = ft_memset(str, '\0', size + 1);
+		ft_bzero(str, size + 1);
 		return (str);
 	}
 }

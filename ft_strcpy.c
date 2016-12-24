@@ -6,7 +6,7 @@
 /*   By: ssalaues <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/28 10:03:54 by ssalaues          #+#    #+#             */
-/*   Updated: 2016/11/28 19:39:30 by ssalaues         ###   ########.fr       */
+/*   Updated: 2016/12/09 18:15:04 by ssalaues         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_strcpy(char *dst, const char *src)
 	char *tmp;
 
 	tmp = dst;
-	while(*src)
+	while (*src)
 		*tmp++ = *src++;
 	*tmp = '\0';
 	return (dst);

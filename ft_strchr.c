@@ -6,7 +6,7 @@
 /*   By: ssalaues <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/28 14:28:33 by ssalaues          #+#    #+#             */
-/*   Updated: 2016/12/03 16:28:05 by ssalaues         ###   ########.fr       */
+/*   Updated: 2016/12/08 20:24:28 by ssalaues         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,9 @@ char	*ft_strchr(const char *s, int c)
 
 	c1 = c;
 	while (*s != c1)
-	{	
+	{
 		if (!*s++)
 			return (NULL);
 	}
-	return &(*(char *)s);
+	return (&(*(char *)s));
 }

@@ -6,7 +6,7 @@
 /*   By: ssalaues <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/03 16:25:14 by ssalaues          #+#    #+#             */
-/*   Updated: 2016/12/03 16:54:58 by ssalaues         ###   ########.fr       */
+/*   Updated: 2016/12/09 18:08:26 by ssalaues         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	char c1;
-	size_t i;
+	char	c1;
+	size_t	i;
 
 	c1 = c;
 	i = ft_strlen(s);

@@ -6,7 +6,7 @@
 /*   By: ssalaues <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/30 15:36:43 by ssalaues          #+#    #+#             */
-/*   Updated: 2016/11/30 15:54:25 by ssalaues         ###   ########.fr       */
+/*   Updated: 2016/12/09 16:12:01 by ssalaues         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 void	ft_putstr_fd(const char *s, int fd)
 {
+	if (!s)
+		return ;
 	while (*s)
 		write(fd, s++, 1);
 }

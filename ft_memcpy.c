@@ -6,7 +6,7 @@
 /*   By: ssalaues <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/30 17:00:05 by ssalaues          #+#    #+#             */
-/*   Updated: 2016/12/05 23:34:12 by ssalaues         ###   ########.fr       */
+/*   Updated: 2016/12/09 18:10:14 by ssalaues         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
-	unsigned char *d;
-	unsigned const char *s;
+	unsigned char		*d;
+	unsigned const char	*s;
 
 	d = dst;
 	s = src;

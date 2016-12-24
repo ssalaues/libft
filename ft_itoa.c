@@ -6,7 +6,7 @@
 /*   By: ssalaues <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/30 15:48:01 by ssalaues          #+#    #+#             */
-/*   Updated: 2016/12/06 20:31:54 by ssalaues         ###   ########.fr       */
+/*   Updated: 2016/12/09 17:38:54 by ssalaues         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 char	*ft_itoa(int n)
 {
-	char *tmp;
-	int len;
-	int ng;
+	char	*tmp;
+	int		len;
+	int		ng;
 
 	ng = 1;
 	len = ft_intlen(n);
@@ -28,12 +28,12 @@ char	*ft_itoa(int n)
 	while (len >= 0)
 	{
 		tmp[len--] = (ft_abs(n) % 10) + '0';
-			n = ft_abs(n) / 10;
+		n = ft_abs(n) / 10;
 		if (len == 0 && ng < 0)
 		{
 			tmp[len] = '-';
-			break;
+			break ;
 		}
 	}
-	return (tmp);	
+	return (tmp);
 }

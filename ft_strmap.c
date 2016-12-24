@@ -6,7 +6,7 @@
 /*   By: ssalaues <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/03 13:03:41 by ssalaues          #+#    #+#             */
-/*   Updated: 2016/12/05 21:11:50 by ssalaues         ###   ########.fr       */
+/*   Updated: 2016/12/09 16:06:23 by ssalaues         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ char	*ft_strmap(char const *s, char (*f)(char))
 	char *tmp;
 	char *s1;
 
+	if (!s)
+		return (NULL);
 	s1 = (char *)s;
 	str = ft_strnew(ft_strlen(s));
 	tmp = str;
