@@ -6,7 +6,7 @@
 /*   By: ssalaues <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/01 14:50:32 by ssalaues          #+#    #+#             */
-/*   Updated: 2016/12/05 23:25:29 by ssalaues         ###   ########.fr       */
+/*   Updated: 2017/01/09 15:03:10 by ssalaues         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,5 +22,6 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 		ft_memcpy(tmp, src, len);
 		ft_memcpy(dst, tmp, len);
 	}
+	free(tmp);
 	return (dst);
 }
