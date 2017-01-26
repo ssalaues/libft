@@ -6,7 +6,7 @@
 #    By: ssalaues <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/28 09:10:49 by ssalaues          #+#    #+#              #
-#    Updated: 2016/12/22 14:06:26 by ssalaues         ###   ########.fr        #
+#    Updated: 2017/01/25 16:10:46 by ssalaues         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,6 +20,7 @@ SRCS := \
 	ft_memcmp.c \
 	ft_strlen.c \
 	ft_strdup.c \
+	ft_strndup.c \
 	ft_strcpy.c \
 	ft_strncpy.c \
 	ft_strcat.c \
