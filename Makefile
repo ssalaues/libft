@@ -70,6 +70,7 @@ SRCS := \
 	ft_abs.c \
 	ft_wcount.c \
 	ft_wordlen.c \
+	ft_puthex.c
 	\
 	ft_lstnew.c \
 	ft_lstdelone.c \
