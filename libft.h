@@ -6,7 +6,7 @@
 /*   By: ssalaues <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/28 09:29:38 by ssalaues          #+#    #+#             */
-/*   Updated: 2017/01/25 16:13:14 by ssalaues         ###   ########.fr       */
+/*   Updated: 2017/03/01 22:24:45 by ssalaues         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,11 +78,13 @@ void				ft_putchar_fd(char c, int fd);
 void				ft_putstr_fd(char const *c, int fd);
 void				ft_putendl_fd(char const *c, int fd);
 void				ft_putnbr_fd(int n, int fd);
+
 int					ft_intlen(long	n);
 long				ft_abs(long i);
 int					ft_wcount(char const *s, char c);
 int					ft_wordlen(char const *s, char c);
-void				ft_puthex(int o, int n);
+int					get_next_line(int fd, char **line);
+
 t_list				*ft_lstnew(void const *content, size_t content_size);
 void				ft_lstdelone(t_list **alst, void (*del)(void *, size_t));
 void				ft_lstdel(t_list **alst, void (*del)(void *, size_t));
