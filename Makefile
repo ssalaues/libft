@@ -6,7 +6,7 @@
 #    By: ssalaues <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/28 09:10:49 by ssalaues          #+#    #+#              #
-#    Updated: 2017/03/01 22:24:32 by ssalaues         ###   ########.fr        #
+#    Updated: 2017/03/15 14:46:22 by ssalaues         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -70,6 +70,10 @@ SRCS := \
 	ft_abs.c 		\
 	ft_wcount.c 	\
 	ft_wordlen.c 	\
+	ft_swap.c		\
+	ft_atoi_array.c \
+	ft_numct.c		\
+	ft_countnline.c	\
 	get_next_line.c	\
 	\
 	ft_lstnew.c 	\
